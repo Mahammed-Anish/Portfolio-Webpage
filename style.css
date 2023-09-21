@@ -140,8 +140,9 @@
 .card1,
 .card2,
 .card3 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.696);
 }
 .card1:hover {
     /* transform: translateY(-10px); */
@@ -217,4 +218,141 @@
 .anchor:hover {
     color: rgb(207, 31, 72);
 }
+
+
+/* Default Styles (for larger screens) */
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 5px;
+}
+
+/* ... (other styles) ... */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .menu ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: auto;
+    }
+
+    .info {
+        height: 70px;
+    }
+
+    .info h1 {
+        font-size: 1.2rem;
+        padding-top: 13px;
+        padding-left: 42px;
+        margin-bottom: 2px;
+    }
+
+    .infotext {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .line {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    .menu ul {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 310px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .cards {
+        height: 23rem;
+    }
+
+    .info {
+        height: 130px;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+        padding-top: 25px;
+        padding-left: 180px;
+        margin-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .infotext {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 0.7rem;
+        width: 100px;
+    }
+
+    .line {
+        margin-left: 20rem;
+        text-align: center;
+    }
+
+    .visit {
+        margin-left: 25px;
+    }
+
+    .social {
+        height: 8rem;
+    }
+
+    .social h1 {
+        font-size: 1.2rem;
+    }
+
+    .icons {
+        padding-top: 15px;
+    }
+
+    .icons li {
+        font-size: 0.8rem;
+    }
+}
+
 
